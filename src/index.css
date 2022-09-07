@@ -1,0 +1,109 @@
+:root {
+  --primary: #ff6b0a;
+  --primaryBg: #f5f5f5;
+  --black: #010101;
+  --gray: #424242;
+  --white: #ffffff;
+  --fontMonserrat: 'Montserrat', sans-serif;
+  --logo-color: #161d2a;
+}
+
+body {
+  margin: 0;
+  font-family: var(--fontMonserrat);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: var(--black);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+.app {
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+
+  width: 100%;
+  min-height: 100vh;
+  max-width: 1440px;
+  margin: 0 auto;
+
+  background-color: var(--primaryBg);
+}
+
+.universityContainer {
+  display: flex;
+  gap: 32px;
+  margin-bottom: 32px;
+}
+
+.universityDescription {
+  font-family: var(--fontMonserrat);
+  font-size: 16px;
+  line-height: 1.5;
+
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.5px;
+}
+
+.containerPage {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.buttonsTumb {
+  display: flex;
+  align-items: center;
+  padding: 12px 0;
+  background-color: #161d2a;
+}
+
+.buttonsTumb button {
+  width: 264px;
+  padding: 0, 10px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.71;
+  text-align: center;
+  border: none;
+  background-color: transparent;
+  text-transform: uppercase;
+  color: #757575;
+}
+
+.buttonsTumb button.active {
+  color: #ffffff;
+  transition: color 300ms ease;
+}

@@ -1,0 +1,29 @@
+.aside {
+  display: flex;
+  flex-direction: column;
+
+  max-height: 100vh;
+  height: 100%;
+
+  justify-content: space-between;
+
+  padding-bottom: 12px;
+  background-color: #ffffff;
+}
+
+.logoContainer {
+  background-color: var(--logo-color);
+
+  height: 80px;
+}
+
+.user {
+  padding: 12px 25px;
+  display: flex;
+  column-gap: 24px;
+  align-items: center;
+}
+
+.userName {
+  font-weight: 700;
+}
